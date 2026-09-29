@@ -1,0 +1,32 @@
+public class if_else_revise01{
+
+      public static void main(String[] args) {
+
+        int salary = 45000;
+        int creditScore = 720;
+        int existingLoan = 1;
+
+        if (salary >= 30000) {
+
+            if (creditScore >= 700) {
+
+                if (existingLoan == 0) {
+                    System.out.println("Loan Approved");
+                    System.out.println("Interest Rate: 8%");
+                } 
+                else {
+                    System.out.println("Loan can be approved");
+                    System.out.println("Interest Rate: 10%");
+                }
+
+            } 
+            else {
+                System.out.println("Credit score is too low");
+            }
+
+        } 
+        else {
+            System.out.println("Salary is too low for the loan");
+        }
+    }
+}
